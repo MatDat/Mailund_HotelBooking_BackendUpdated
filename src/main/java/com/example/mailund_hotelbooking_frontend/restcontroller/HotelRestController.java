@@ -24,4 +24,14 @@ public class HotelRestController {
     private ResponseEntity<List<Hotel>> getHotels(){
         return hotelService.getAllHotels();
     }
+
+    @GetMapping("/findHotelById/{id}")
+    public ResponseEntity<Hotel> findHotelById(@PathVariable("id") int id){
+        return hotelService.findById(id);
+    }
+
+    @PutMapping("/editHotel")
+    public ResponseEntity<Hotel> editHotel(@RequestBody Hotel hotel){
+        return hotelService.editHotel(hotel);
+    }
 }
