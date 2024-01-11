@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @CrossOrigin
 public class HotelRestController {
@@ -16,5 +18,10 @@ public class HotelRestController {
     @PostMapping("/addHotel")
     private ResponseEntity<Hotel> addHotel(@RequestBody Hotel hotel){
         return hotelService.saveHotel(hotel);
+    }
+
+    @GetMapping("/getAllHotels")
+    private ResponseEntity<List<Hotel>> getHotels(){
+        return hotelService.getAllHotels();
     }
 }
