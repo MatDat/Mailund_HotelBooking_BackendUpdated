@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3d7a3bf-1ce4-4ecd-aa61-7f4874c9a968" name="Changes" comment="Hotel opret og 250 hotel med room virker">
+    <list default="true" id="a3d7a3bf-1ce4-4ecd-aa61-7f4874c9a968" name="Changes" comment="WIP editHotel">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/mailund_hotelbooking_frontend/service/HotelServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mailund_hotelbooking_frontend/model/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mailund_hotelbooking_frontend/model/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mailund_hotelbooking_frontend/restcontroller/HotelRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mailund_hotelbooking_frontend/restcontroller/HotelRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mailund_hotelbooking_frontend/service/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mailund_hotelbooking_frontend/service/HotelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/mailund_hotelbooking_frontend/MailundHotelBookingFrontendApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/mailund_hotelbooking_frontend/MailundHotelBookingFrontendApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +22,7 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -56,6 +58,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -64,7 +68,47 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.mailund_hotelbooking_frontend.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MailundHotelBookingFrontendApplication">
+    <configuration name="HotelServiceTest.deleteHotelById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mailund_HotelBooking_Backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.mailund_hotelbooking_frontend.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.mailund_hotelbooking_frontend.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.mailund_hotelbooking_frontend.service.HotelServiceTest" />
+      <option name="METHOD_NAME" value="deleteHotelById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HotelServiceTest.saveHotel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mailund_HotelBooking_Backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.mailund_hotelbooking_frontend.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.mailund_hotelbooking_frontend.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.mailund_hotelbooking_frontend.service.HotelServiceTest" />
+      <option name="METHOD_NAME" value="saveHotel" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Mailund_HotelBooking_Backend" />
       <method v="2">
@@ -85,6 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HotelServiceTest.saveHotel" />
+        <item itemvalue="JUnit.HotelServiceTest.deleteHotelById" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -110,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705007722429</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="WIP editHotel">
+      <created>1705015210922</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705015210922</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +198,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hotel opret og 250 hotel med room virker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hotel opret og 250 hotel med room virker" />
+    <MESSAGE value="WIP editHotel" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP editHotel" />
   </component>
 </project>

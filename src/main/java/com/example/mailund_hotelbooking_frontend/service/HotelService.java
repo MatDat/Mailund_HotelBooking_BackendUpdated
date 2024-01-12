@@ -69,4 +69,14 @@ public class HotelService {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
+
+    public void deleteHotelById(int id){
+        Optional<Hotel> HotelToBeDeleted = hotelRepo.findById(id);
+
+        if (HotelToBeDeleted.isPresent()){
+            hotelRepo.deleteById(id);
+        } else{
+            throw new Error("Hotel not found with id: " + id);
+        }
+    }
 }
